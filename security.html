@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>ChildShield Rating for Internet of Toys</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand text-primary fs-3" href="index.html">ChildShield Rating for Internet of Toys</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownRubrics" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		  Rubrics</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdownRubrics">
+			<li><a class="dropdown-item" href="privacy.html">Privacy</a>
+			<li><hr class="dropdown-divider"></li>
+			<li><a class="dropdown-item" href="security.html">Security</a>
+		</ul>
+		</li>
+		<li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" id="navbarDropdownRatings" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Generated Ratings</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdownRatings">
+			<li><a class="dropdown-item" href="penpalwhizz.html">Penpal Whizz</a></li>
+			
+			</ul>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link active" aria-current="page" href="research.html">Research</a>
+		</li>
+		<li class="nav-item">
+		<a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+		</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navigation bar -->
+<div class="container-fluid mx-2">
+<p>
+<h4>Security</h4>
+</p>
+<p><h5 class="text-danger">Factors</h5>
+The security of an IoToy can be determined by observing the following factors:
+<ul>
+<li>S1: Personal Information (PI) Storage Security</li>
+<li>S2: Communication Security</li>
+<li>S3: App Privileges</li>
+<li>S4: Code Security</li>
+<li>S5: Device Security</li>
+<li>S6: Maintenance</li>
+</ul>  
+</p>
+
+<p><h5 class="text-danger">Rubrics</h5></p>
+<p width="50%">
+<table class="table table-bordered w-auto" >
+<thead>
+<tr class="text-center align-middle">
+<th scope="col" rowspan="2">Security Factor</th>
+<th scope="col" colspan="5" >Score (x<sub>i</sub>)</th>
+</tr>
+<tr class="text-center align-middle">
+<th scope="col">-1</th>
+<th scope="col">-0.5</th>
+<th scope="col">0</th>
+<th scope="col">0.5</th>
+<th scope="col">1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="text-center align-middle">
+<th scope="row">S1</th>
+<td>No security measures are applied on PI storage</td>
+<td>PI storage security measures exist but are weak and unsatisfactory to ensure confidentiality, integrity and availability</td>
+<td>Not applicable</td>
+<td>PI storage security measures can be improved to ensure confidentiality, integrity and availability</td>
+<td>Confidentiality, integrity and availability of PI is guaranteed. Sensitive PI is encrypted using strong methods and accessible by authenticated and authorised users only </td>
+</tr>
+<tr class="text-center align-middle">
+<th scope="row">S2</th>
+<td>PI is transmitted through insecure channels</td>
+<td>Weak communication protocols are used. For example, insecure versions of SLS/TLS, weak key lengths or default passwords for pairing</td>
+<td>Not applicable</td>
+<td>There is scope for improving communication security</td>
+<td>Mutual authentication and encryption practices are strong</td>
+</tr>
+<tr class="text-center align-middle">
+<th scope="row">S3</th>
+<td>Companion desktop or mobile app is over privileged. User is not notified of app privileges during installation</td>
+<td>Companion desktop or mobile app has few unnecessary privileges. User is not notified of app privileges during installation</td>
+<td>Not applicable</td>
+<td>Companion desktop or mobile app has few unnecessary privileges. User is notified of app privileges during installation</td>
+<td>Companion desktop or mobile app uses only necessary privileges. User is notified of app privileges during installation</td>
+</tr>
+<tr class="text-center align-middle">
+<th scope="row">S4</th>
+<td>Secure coding practices are not followed resulting in insecure code</td>
+<td>Few secure coding practices are followed and many vulnerabilities are detected in source code</td>
+<td>Not applicable</td>
+<td>Most secure coding practices are followed and few vulnerabilities are detected in source code</td>
+<td>Code demonstrates secure coding practices</td>
+</tr>
+<tr class="text-center align-middle">
+<th scope="row">S5</th>
+<td>Device (physical toy components) is insecure and exhibits vulnerabilities that may have large scale impact or affect the immediate user's safety
+</td>
+<td>Device (physical toy components) exhibits vulnerabilities that may have minor impact to the immediate user</td>
+<td>Not applicable</td>
+<td>Device (physical toy components) provides weak credentials, password management or encryption methods</td>
+<td>Device (physical toy components) is secure</td>
+</tr>
+<tr class="text-center align-middle">
+<th scope="row">S6</th>
+<td>Either of the following is true: 
+<ul><li>No patches/ updates are provided for bugs and security vulnerabilities</li>
+<li>Manufacturer has not provided a maintenance duration</li>
+</ul>
+</td>
+<td>Few updates/patches are provided for bugs and security vulnerabilities during maintenance duration</td>
+<td>Not applicable</td>
+<td>Most updates/patches for bugs and security vulnerabilities are provided timely during maintenance duration</td>
+<td>Updates/patches are quickly made available for bug fixes and security vulnerabilities discovered during maintenance duration</td>
+</tr>
+</tbody>
+</table>
+</p>
+</div>
+<div class="container-fluid text-center">
+<br><br>
+<small>
+<p class="text-center">2020-2021 ChildShield Rating for Internet of Toys</p>
+<!-- License -->
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+<a property="dct:title" rel="cc:attributionURL" href="https://childshield.github.io">ChildShield</a> by <span property="cc:attributionName">Sonal Allana</span> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+<!--End License-->
+</small>
+</div>
+  </body>
+</html>
